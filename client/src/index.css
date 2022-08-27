@@ -1,0 +1,346 @@
+* {
+	margin: 0;
+	font-family: montserrat;
+}
+
+body {
+	font-size: 1.2rem;
+}
+
+.notFound {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	text-align: center;
+}
+
+.notFound-container {
+	width: 100%;
+	position: relative;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-container {
+	background-color: white;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 3px 10px rgb(0, 0, 0, 0.1);
+	padding: 1rem 0;
+}
+
+.nav-logo {
+	letter-spacing: 0.8rem;
+	padding-left: 4rem;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	padding-right: 4rem;
+}
+
+.nav-block {
+	width: 100%;
+	height: 60px;
+}
+
+.link {
+	color: rgb(58, 58, 58);
+	text-decoration: none;
+}
+
+.link:hover {
+	color: rgb(41, 80, 255);
+	text-decoration: underline;
+}
+
+.required {
+	width: 100%;
+	margin: 0.8rem 0 0.8rem 0;
+	text-align: center;
+}
+
+.active {
+	color: rgb(41, 80, 255);
+}
+
+@media screen and (max-width: 700px) {
+	.nav-container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.nav-block {
+		height: 100px;
+	}
+
+	.nav-logo {
+		padding: 0;
+		letter-spacing: 0.2rem;
+		text-align: center;
+	}
+
+	.nav-links {
+		padding: 0;
+	}
+}
+
+.add {
+	background-color: rgb(0, 185, 0);
+	font-size: 1rem;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 20%;
+	color: white;
+}
+
+.add:hover {
+	background-color: rgb(0, 227, 0);
+}
+
+.edit,
+.delete {
+	color: rgb(65, 106, 255);
+	cursor: pointer;
+	font-size: 1.1rem;
+}
+
+.edit:hover,
+.delete:hover {
+	color: rgb(0, 27, 126);
+	text-decoration: underline;
+}
+
+.edit:hover,
+.delete:hover,
+.add:hover {
+	transition: 0.25s;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.todoHeader {
+	position: relative;
+	margin: 4rem 0 4rem 0;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.8rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 48rem;
+}
+
+.container-form {
+	width: 100%;
+	margin-bottom: 0.8rem;
+}
+
+.input-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.input-form > input,
+.username,
+.password {
+	border: 2px solid rgb(196, 196, 196);
+	border-radius: 4px;
+	font-size: 1rem;
+	width: 80%;
+	padding: 0.4rem;
+	box-sizing: border-box;
+	outline: none;
+	transition: 0.5s;
+}
+
+.input-form > input[type="text"]:focus,
+.username[type="text"]:focus,
+.password[type="text"]:focus {
+	border: 2px solid rgb(165, 165, 165);
+	box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.05);
+}
+
+.container-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100%;
+}
+
+.container-list h4,
+.container-list > :nth-child(1) {
+	width: 50%;
+	text-align: center;
+}
+
+.container-buttons {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	width: 50%;
+	text-align: center;
+	justify-content: center;
+}
+
+.line,
+.line-header {
+	width: 100%;
+	height: 2px;
+	background-color: rgb(196, 196, 196);
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		width: 32rem;
+	}
+}
+
+@media screen and (max-width: 724px) {
+	.container {
+		width: 24rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	.add {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.container {
+		width: 16rem;
+	}
+
+	.add {
+		width: 35%;
+	}
+
+	.input-form > input {
+		width: 65%;
+	}
+
+	p {
+		font-size: 0.8rem;
+	}
+
+	.edit,
+	.delete {
+		font-size: 1rem;
+	}
+
+	.add {
+		font-size: 0.8rem;
+	}
+}
+
+.container-register,
+.container-login {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	align-items: center;
+}
+
+.register-form,
+.login-form {
+	width: 350px;
+	gap: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.register-button,
+.login-button,
+.expired-button {
+	background-color: rgb(53, 35, 255);
+	font-size: 1rem;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+	width: 40%;
+}
+
+.error {
+	color: rgb(255, 74, 74);
+	text-align: center;
+}
+
+.created {
+	color: rgb(0, 83, 0);
+	text-align: center;
+}
+
+.login-header,
+.register-header {
+	font-size: 2rem;
+}
+
+.container-disclaimer {
+	position: fixed;
+	background-color: rgb(54, 54, 54);
+	padding: 1rem 0;
+	color: white;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	bottom: 0px;
+}
+
+.disclaimer {
+	width: 80%;
+}
+
+.container-expired {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	gap: 0.8rem;
+	flex-direction: column;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
