@@ -12,8 +12,8 @@ Todo list application with [JWT](https://jwt.io/) user authorization. The applic
 | :---:   | :---:        | :---:         |
 | `POST ` | /api/register   | Add user to database |
 | `GET`   | /api/login   | Verify if the user already exist in the database |
-| `POST ` | /api/login   | Verify the user to login & create a JWT  |
-| `GET`   | /api/todos   | Get all todos from database |
+| `POST ` | /api/login   | Verify the user to login & create a JWT for them  |
+| `GET`   | /api/todos   | Get all todos from the database |
 | `POST ` | /api/todos   | Add a todo to the database    |
 | `EDIT`  | /api/todos   | Edit selected todo   |
 | `DELETE`| /api/todos   | Delete selected todo  |
