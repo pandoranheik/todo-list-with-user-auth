@@ -1,7 +1,7 @@
 # 📝 todo-list-with-user-auth
 Todo list application with [JWT](https://jwt.io/) user authorization. The application calls an api route from the client to the server and performs simple CRUD operations.
 
-## 🥞 Tech Stack
+## 🥞 Tech stack
 | Frontend | Backend       | Database |
 | :---:   | :---:        | :---:         |
 | [React](https://reactjs.org/) | [Express](https://expressjs.com/)   | [PostgreSQL](https://www.postgresql.org) |
