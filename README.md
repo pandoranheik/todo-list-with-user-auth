@@ -1,5 +1,5 @@
 # 📝 todo-list-with-user-auth
-Todo list application with [JWT](https://jwt.io/) user authorization.
+Todo list application with [JWT](https://jwt.io/) user authorization that uses api routes and simple CRUD operations.
 
 ## 🥞 Tech Stack
 | Frontend | Backend       | Database |
