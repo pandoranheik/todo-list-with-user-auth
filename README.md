@@ -10,7 +10,7 @@ Todo list application with [JWT](https://jwt.io/) user authorization. The applic
 ##### All `/api/todos` routes are protected with JWT. 
 | Methods | Routes       | Functionality |
 | :---:   | :---:        | :---:         |
-| `POST ` | /api/register   | Add user to database |
+| `POST` | /api/register   | Add user to database |
 | `GET`   | /api/login   | Verify if the user already exist in the database |
 | `POST ` | /api/login   | Verify the user to login & create a JWT for them  |
 | `GET`   | /api/todos   | Get all todos from the database |
